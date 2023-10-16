@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator</title>
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="bets">
+                <div class="bet">1.78x</div>
+                <div class="bet">1.17x</div>
+                <div class="bet">1.56x</div>
+                <div class="bet active">1.56x</div>
+                <div class="bet">1.00x</div>
+                <div class="bet active">2.48x</div>
+                <div class="bet">1.56x</div>
+            </div>
+
+            <div class="canvas_container">
+                <canvas id="myCanvas"></canvas>
+                <div class="aviator"></div>
+                <div class="dots dots_gorizontal">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dots dots_vertical">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="light"></div>
+            <div class="money"></div>
+            <div class="pilot" width="480" height="687"></div>
+
+            <div class="panel">
+                <div class="input">
+                    <p><span>0</span>.00</p>
+                    <div class="signs">
+                        <button class="plus" onclick="plus()"><p>+</p></button>
+                        <button class="minus" onclick="minus()"><p>-</p></button>
+                    </div>
+                </div>
+                <button class="btn" onclick="startAnimation()">GET BONUS</button>
+                <div class="betting">10$</div>
+                <div class="betting">20$</div>
+                <div class="betting">50$</div>
+                <div class="betting">100$</div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal_container">
+                <p>Welcome Bonus</p>
+                <a href="">Restart</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js" asinc></script>
+</body>
+</html>
